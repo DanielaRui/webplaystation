@@ -1,31 +1,84 @@
 :root {
-  --blue: #003087;
-  --black: #121212;
+  --blue: #000000;
+  --black: #000000;
   --white: #ffffff;
-  --gray: #1e1e1e;
-  --accent: #0050ff;
+  --gray: #000000;
+  --accent: #8aafff;
 }
 
+/* Fondo general y texto */
 body.playstation-theme {
-  background: linear-gradient(145deg, #000000, #1e1e1e);
+  background: linear-gradient(145deg, #000000, #536efa);
   color: var(--white);
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* HEADER NAVBAR */
+header.navbar {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 40px;
+}
+
+header.navbar a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header.navbar a:hover {
+  color: #ffffff;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* TITULOS */
 h1, h2 {
   color: var(--accent);
-  text-shadow: 0 0 8px #0050ff;
+  text-shadow: 0 0 8px #8aafff;
+  margin-bottom: 20px;
 }
 
+/* TARJETAS NEUMÓRFICAS */
 .neumorphic-card {
   background: var(--gray);
   border-radius: 12px;
-  box-shadow: 8px 8px 16px #0a0a0a, -8px -8px 16px #2a2a2a;
+  box-shadow: 8px 8px 16px #0a0a0a, -8px -8px 16px #3a75cd;
   padding: 20px;
-  margin: 20px 0;
+  margin-bottom: 40px;
+}
+
+/* IMAGEN PRINCIPAL */
+#imagen img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* VIDEO CENTRADO Y LIMITADO */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .video-wrapper video {
   width: 100%;
+  max-width: 800px;
   border-radius: 8px;
 }
