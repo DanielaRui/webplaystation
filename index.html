@@ -3,46 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Playstation-web</title>
+  <title>PlayStation Web</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json">
 </head>
-<body>
+<body class="playstation-theme">
   <div class="container">
-    <h1><i class="fas fa-cat" style="margin-right: 10px;"></i>Bienvenidoski</h1>
+    <h1><i class="fab fa-playstation" style="margin-right: 10px; color: #003087;"></i>Bienvenido al Universo PlayStation</h1>
 
     <section id="imagen" class="neumorphic-card">
-      <img src="assets/imagen.jpg" alt="Luces neón verdes brillando" />
+      <img src="assets/ps_background.jpg" alt="PlayStation Wallpaper" />
     </section>
 
     <section id="video" class="neumorphic-card">
-      <h2>Video</h2>
+      <h2><i class="fas fa-gamepad" style="margin-right: 8px;"></i>Trailer Destacado</h2>
       <div class="video-wrapper">
-        <iframe 
-          src="assets/video_gatos.mp4">
-        </iframe>
+        <video controls>
+          <source src="assets/ps_trailer.mp4" type="video/mp4">
+          Tu navegador no soporta videos HTML5.
+        </video>
       </div>
     </section>
 
     <section class="neumorphic-card" id="trivia">
-        <h2>Trivia de Gatos</h2>
-        <p id="pregunta"></p>
-        <p id="respuesta" style="display: none; color: var(--brown); font-weight: bold;"></p>
-        <button id="mostrarBtn">Mostrar respuesta</button>
-        <button id="nuevaPreguntaBtn" style="margin-top: 15px;">Otra pregunta</button>
+      <h2><i class="fas fa-question-circle" style="margin-right: 8px;"></i>Trivia PlayStation</h2>
+      <p id="pregunta"></p>
+      <p id="respuesta" style="display: none; color: var(--blue); font-weight: bold;"></p>
+      <button id="mostrarBtn">Mostrar respuesta</button>
+      <button id="nuevaPreguntaBtn" style="margin-top: 15px;">Otra pregunta</button>
     </section>
-      
-      
   </div>
 </body>
+
 <script src="script.js"></script>
 <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then(() => console.log('Service Worker registrado correctamente'))
-        .catch(error => console.error('Error al registrar Service Worker:', error));
-    }
-  </script>
-
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log('Service Worker registrado correctamente'))
+      .catch(error => console.error('Error al registrar Service Worker:', error));
+  }
+</script>
 </html>
