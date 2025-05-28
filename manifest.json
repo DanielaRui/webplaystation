@@ -1,0 +1,41 @@
+{
+  "name": "Universo PlayStation",
+  "short_name": "PlayStation",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#536efa",
+  "orientation": "portrait",
+  "description": "Explora juegos, información y más del universo PlayStation.",
+  "icons": [
+    {
+      "src": "assets/icon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/home.png",
+      "sizes": "540x960",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/games.png",
+      "sizes": "540x960",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/info.png",
+      "sizes": "540x960",
+      "type": "image/png"
+    }
+  ],
+  "scope": "./",
+  "categories": ["games", "entertainment", "tools"]
+}
