@@ -1,0 +1,31 @@
+:root {
+  --blue: #003087;
+  --black: #121212;
+  --white: #ffffff;
+  --gray: #1e1e1e;
+  --accent: #0050ff;
+}
+
+body.playstation-theme {
+  background: linear-gradient(145deg, #000000, #1e1e1e);
+  color: var(--white);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2 {
+  color: var(--accent);
+  text-shadow: 0 0 8px #0050ff;
+}
+
+.neumorphic-card {
+  background: var(--gray);
+  border-radius: 12px;
+  box-shadow: 8px 8px 16px #0a0a0a, -8px -8px 16px #2a2a2a;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.video-wrapper video {
+  width: 100%;
+  border-radius: 8px;
+}
