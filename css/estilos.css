@@ -21,6 +21,28 @@ body {
   padding: 40px 20px;
 }
 
+/* HEADER NAVBAR */
+header.navbar {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 40px;
+}
+
+header.navbar a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header.navbar a:hover {
+  color: #ffffff;
+}
+
 h1 {
   margin-bottom: 30px;
   font-size: 2.5em;
